@@ -7,7 +7,7 @@ import { registerListeners, unregisterListeners } from '../utils/preventMobileSc
 
 const infoBlocks = [
   {
-    h2: "Организатор проекта",
+    h2: "Экологичным быть",
     desc: <>
       Студенческое объединение <ExternalLink to="http://regreen.tilda.ws/we">REGREEN</ExternalLink>. Основной задачей объединия является изменение мира к лучшему и вовлечение в культуру устойчивого развития.
     </>,
