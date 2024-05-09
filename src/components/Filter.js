@@ -13,7 +13,6 @@ function Filter({ onFilterChange }) {
 
     return (
         <div className="filter">
-        <div className="filter__container">
             <label className="filter__checkbox">
                 <input type="checkbox" value="plastic" onChange={handleCheckboxChange} /> Пластик
                 <img className="filter__img" src={IconPlastic} alt="1" />
@@ -35,7 +34,6 @@ function Filter({ onFilterChange }) {
                 <img className="filter__img" src={IconBat} alt="5" />
             </label>
             </div>
-        </div>
     );
 }
 

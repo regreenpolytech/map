@@ -11,10 +11,10 @@ const SidePanel = ({ onFilterChange }) => {
                 Карта раздельного сбора
             </div>
             <div className="side-panel__buttons">
-            <button className="side-panel__aboutButton" onClick={() => setActiveComponent('PD')}>
+            <button className="side-panel__button" onClick={() => setActiveComponent('PD')}>
                 О проекте
             </button>
-            <button className="side-panel__filterButton" onClick={() => setActiveComponent('Filter')}>
+            <button className="side-panel__button" onClick={() => setActiveComponent('Filter')}>
                 Фильтр точек
             </button>
             </div>
