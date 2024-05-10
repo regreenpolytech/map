@@ -9,7 +9,8 @@ import IconCap from '../img/filter_images/99.png'
 function Filter({ onFilterChange }) {
     const handleCheckboxChange = (event) => {
         const filterType = event.target.value;
-        onFilterChange(filterType);
+        let isChecked = event.target.checked;
+        onFilterChange(filterType, isChecked);
     };
 
     return (

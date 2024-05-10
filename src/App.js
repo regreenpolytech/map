@@ -23,17 +23,20 @@ class App extends Component {
         this.state.choosenFilters = [];
     }
 
-    onFilterChange = (value) => {
+    onFilterChange = (value, isChecked) => {
         const updatedFilters = [...this.state.choosenFilters];
         const typeList = recycleTypes[value];
+        const isNeedToFilter = isChecked;
 
         const index = updatedFilters.findIndex(filter => filter === typeList);
-        if (index !== -1) {
-            updatedFilters.splice(index, 1);
-        } else {
+        
+        if (isNeedToFilter & index == -1) {
             updatedFilters.push(typeList);
         }
-
+        else if (!isNeedToFilter) {
+            updatedFilters.splice(index, 1);
+        }
+        
         this.setState({ choosenFilters: updatedFilters });
     };
 
