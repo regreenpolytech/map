@@ -5,12 +5,12 @@ import SidePanel from './components/SidePanel'
 import './styles/index.sass'
 
 const   recycleTypes = {
-    plastic: [0, 5, 6, 8, 90, 95, 96, 98],
+    plastic: [0, 5, 6, 8, 10, 90, 95, 96, 98],
     paper: [1, 5, 7, 8, 91, 95, 97, 98],
-    rare: [3, 93],
+    rare: [3, 10, 93],
     glass: [2, 6, 7, 8, 92, 96, 97, 98],
     battery: [4, 94],
-    cap: [9, 99]
+    cap: [9, 10, 99]
 }
 
 class App extends Component {
