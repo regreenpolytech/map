@@ -4,6 +4,7 @@ import IconPaper from '../img/filter_images/91.png'
 import IconGlass from '../img/filter_images/92.png'
 import IconRare from '../img/filter_images/93.png'
 import IconBat from '../img/filter_images/4.png'
+import IconCap from '../img/filter_images/9.png'
 
 function Filter({ onFilterChange }) {
     const handleCheckboxChange = (event) => {
@@ -32,6 +33,10 @@ function Filter({ onFilterChange }) {
             <label className="filter__checkbox">
                 <input type="checkbox" value="battery" onChange={handleCheckboxChange} /> Батарейки
                 <img className="filter__img" src={IconBat} alt="5" />
+            </label>
+            <label className="filter__checkbox">
+                <input type="checkbox" value="cap" onChange={handleCheckboxChange} /> Крышечки
+                <img className="filter__img" src={IconCap} alt="6" />
             </label>
             </div>
     );
