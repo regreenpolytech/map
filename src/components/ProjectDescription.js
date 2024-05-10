@@ -51,9 +51,6 @@ class ProjectDescription extends Component {
           className="project-description__mobile-close"
           onClick={() => this.setState({showMobile: false})}
         />
-        <div className="project-description__h1">
-          Карта раздельного сбора
-        </div>
         <div className="project-description__blocks">
           {infoBlocks.map(item =>
             <div className="project-description__blocks__item">
