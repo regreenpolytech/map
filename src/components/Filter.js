@@ -3,8 +3,8 @@ import IconPlastic from '../img/filter_images/90.png'
 import IconPaper from '../img/filter_images/91.png'
 import IconGlass from '../img/filter_images/92.png'
 import IconRare from '../img/filter_images/93.png'
-import IconBat from '../img/filter_images/4.png'
-import IconCap from '../img/filter_images/9.png'
+import IconBat from '../img/filter_images/94.png'
+import IconCap from '../img/filter_images/99.png'
 
 function Filter({ onFilterChange }) {
     const handleCheckboxChange = (event) => {
@@ -14,30 +14,48 @@ function Filter({ onFilterChange }) {
 
     return (
         <div className="filter">
-            <label className="filter__checkbox">
-                <input type="checkbox" value="plastic" onChange={handleCheckboxChange} /> Пластик
+            <div className="filter__container">
+             <label className="filter__checkbox">
+                <input type="checkbox" value="plastic" onChange={handleCheckboxChange} />
                 <img className="filter__img" src={IconPlastic} alt="1" />
-            </label>
-            <label className="filter__checkbox">
-                <input type="checkbox" value="paper" onChange={handleCheckboxChange} /> Бумага
-                <img className="filter__img" src={IconPaper} alt="2" />
-            </label>
-            <label className="filter__checkbox">
-                <input type="checkbox" value="glass" onChange={handleCheckboxChange} /> Стекло
+                <span class="filter__text">Пластик</span>
+             </label>
+            </div>
+            <div className="filter__container">
+             <label className="filter__checkbox">
+                <input type="checkbox" value="paper" onChange={handleCheckboxChange} />
+                <img className="filter__img" src={IconPaper} alt="2" /> 
+                <span class="filter__text">Бумага</span>
+             </label>
+            </div>
+            <div className="filter__container">
+             <label className="filter__checkbox">
+                <input type="checkbox" value="glass" onChange={handleCheckboxChange} />
                 <img className="filter__img" src={IconGlass} alt="3" />
-            </label>
-            <label className="filter__checkbox">
-                <input type="checkbox" value="rare" onChange={handleCheckboxChange} /> Редкости
+                <span class="filter__text">Стекло</span>
+             </label>
+            </div>
+            <div className="filter__container">
+             <label className="filter__checkbox">
+                <input type="checkbox" value="rare" onChange={handleCheckboxChange} />
                 <img className="filter__img" src={IconRare} alt="4" />
-            </label>
-            <label className="filter__checkbox">
-                <input type="checkbox" value="battery" onChange={handleCheckboxChange} /> Батарейки
+                <span class="filter__text">Редкости</span>
+             </label>
+            </div>
+            <div className="filter__container">
+             <label className="filter__checkbox">
+                <input type="checkbox" value="battery" onChange={handleCheckboxChange} /> 
                 <img className="filter__img" src={IconBat} alt="5" />
-            </label>
-            <label className="filter__checkbox">
-                <input type="checkbox" value="cap" onChange={handleCheckboxChange} /> Крышечки
+                <span class="filter__text">Батарейки</span>
+             </label>
+            </div>
+            <div className="filter__container">
+             <label className="filter__checkbox">
+                <input type="checkbox" value="cap" onChange={handleCheckboxChange} /> 
                 <img className="filter__img" src={IconCap} alt="6" />
-            </label>
+                <span class="filter__text">Крышечки</span>
+             </label>
+            </div>
             </div>
     );
 }
