@@ -9,8 +9,8 @@ const   recycleTypes = {
     paper: [1, 5, 7, 8, 91, 95, 97, 98],
     rare: [3, 93],
     glass: [2, 6, 7, 8, 92, 96, 97, 98],
-    battery: [4],
-    cap: [9]
+    battery: [4, 94],
+    cap: [9, 99]
 }
 
 class App extends Component {
